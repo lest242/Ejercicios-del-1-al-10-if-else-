@@ -1,0 +1,32 @@
+using System;
+using UnityEngine;
+
+public class gameManager : MonoBehaviour
+{
+    public int temperatura;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        if (temperatura <= 0)
+        {
+            Debug.Log("nieve");
+        }
+        else if (temperatura <= 15)
+        {
+            Debug.Log("lluvia");
+        }
+        else if (temperatura <= 25)
+        {
+            Debug.Log("nublado");
+        }
+        else
+        {
+            Debug.Log("soleado");
+        }
+    }
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+}
