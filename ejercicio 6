@@ -1,0 +1,20 @@
+using System;
+using UnityEngine;
+
+public class gameManager : MonoBehaviour
+{
+   public bool arma;
+   public bool munición;
+   public bool aturdimiento;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        if (arma && munición && aturdimiento)
+            Debug.Log("Puede atacar");
+    }
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+}
