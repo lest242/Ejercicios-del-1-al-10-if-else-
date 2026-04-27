@@ -1,0 +1,20 @@
+using UnityEngine;
+
+public class gameManager : MonoBehaviour
+{
+    string texto = "necesitas seguir entrenando. ";
+    public int nivel;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        if (nivel >= 10)
+            Debug.Log("Acceso permitido");
+        else
+            Debug.Log("Acceso denegado, " + texto);
+    }
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+}
