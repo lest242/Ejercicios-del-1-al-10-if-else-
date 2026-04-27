@@ -1,0 +1,25 @@
+using UnityEditor.Experimental.GraphView;
+using UnityEngine;
+
+public class gameManager : MonoBehaviour
+{
+    string texto = "maestria: ";
+    public int puntaje;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        if (puntaje < 100)
+            Debug.Log(texto + "novato");
+        else if (puntaje < 300)
+            Debug.Log(texto + "intermedio");
+        else if (puntaje < 600)
+            Debug.Log(texto + "avanzado");
+        else if (puntaje >= 600)
+            Debug.Log(texto + "elite");
+    }
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+}
