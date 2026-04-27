@@ -1,0 +1,21 @@
+using System;
+using UnityEngine;
+
+public class gameManager : MonoBehaviour
+{
+   public bool tienePocion;
+   public bool zonaSegura;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        if (tienePocion || zonaSegura)
+            Debug.Log("Curación disponible");
+        else
+            Debug.Log("Recuerda no morir");
+    }
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+}
