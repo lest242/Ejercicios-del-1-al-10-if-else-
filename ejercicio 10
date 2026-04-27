@@ -1,0 +1,25 @@
+using System;
+using UnityEngine;
+
+public class gameManager : MonoBehaviour
+{
+    string texto = "cuidado el enemigo te va a ";
+    public bool distanciaEnemigo;
+    public int distancia;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        if (distanciaEnemigo && distancia <= 5)
+            Debug.Log(texto + "atacar");
+        else if (distanciaEnemigo && distancia > 15)
+            Debug.Log(texto + "perseguir");
+        else if (distanciaEnemigo && distancia >= 30)
+            Debug.Log("patrullar");
+
+    }
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+}
