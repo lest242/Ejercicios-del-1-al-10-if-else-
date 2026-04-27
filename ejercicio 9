@@ -1,0 +1,20 @@
+using System;
+using UnityEngine;
+
+public class gameManager : MonoBehaviour
+{
+    int mana;
+    int stamina;
+    bool enemigoCerca;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        if (mana > 50 && stamina > 20 && enemigoCerca)
+            Debug.Log("Activar habilidad");
+    }
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+}
