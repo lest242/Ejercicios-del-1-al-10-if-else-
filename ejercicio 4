@@ -1,0 +1,23 @@
+using UnityEngine;
+
+public class gameManager : MonoBehaviour
+{
+    public int velocidad;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        if (velocidad <= 0)
+            Debug.Log("Detenido");
+        else if (velocidad > 10)
+            Debug.Log("caminando");
+        else if (velocidad >= 30)
+            Debug.Log("corriendo");
+        else if (velocidad >= 40)
+            Debug.Log("sprint");
+    }
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+}
